@@ -5,7 +5,6 @@
 }: {
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
-    supportedFilesystems = ["ntfs"];
     loader = {
       systemd-boot.enable = false;
       efi.canTouchEfiVariables = true;
