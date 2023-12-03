@@ -1,5 +1,5 @@
 {
-  description = "spaceflake";
+  description = "grade minecraft server flake";
 
   inputs = {
     nixpkgs = {
