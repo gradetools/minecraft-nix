@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: {
-  users.users.minecraftsysadmin = {
+  users.users.leviticusc = {
     isNormalUser = true;
     description = "sysadmin";
     extraGroups = ["networkmanager" "wheel" "audio" "video" "input"];

@@ -7,6 +7,6 @@
     ./security.nix
     ./nix.nix
     ./i18n.nix
-    ./systemd.nix
+    ./hardware-config.nix
   ];
 }
