@@ -1,2 +1,2 @@
 # grade-server-nix
-nix flake setup for the grade minecraft server
+nix (ew) flake setup for the grade minecraft server
