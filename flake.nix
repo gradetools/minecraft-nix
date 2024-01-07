@@ -17,14 +17,12 @@
     home-manager,
     ...
   } @ inputs: {
-    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
     nixosConfigurations = {
       "grade-mc-server" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = inputs;
         modules = [
           ./system
-          ./minecraft/minecraft.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
