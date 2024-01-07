@@ -7,7 +7,11 @@
     devmon.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
-    sshd.enable = true;
+    openssh = {
+      enable = true;
+      settings.PasswordAuthentication = false;
+      settings.KbdInteractiveAuthentication = false;
+    };
     fail2ban = {
       enable = true;
       maxretry = 5;
@@ -33,13 +37,5 @@
       nssmdns = true;
       openFirewall = true;
     };
-    pipewire = {
-      enable = true;
-      alsa.enable = true;
-      alsa.support32Bit = true;
-      pulse.enable = true;
-      jack.enable = true;
-    };
-
   };
 }

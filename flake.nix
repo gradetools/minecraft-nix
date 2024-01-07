@@ -23,6 +23,8 @@
         specialArgs = inputs;
         modules = [
           ./system
+          ./minecraft
+          ./home
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
