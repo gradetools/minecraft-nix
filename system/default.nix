@@ -9,4 +9,5 @@
     ./i18n.nix
     ./hardware-config.nix
   ];
+  system.stateVersion = "24.05";
 }

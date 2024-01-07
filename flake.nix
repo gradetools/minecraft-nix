@@ -20,17 +20,10 @@
     nixosConfigurations = {
       "grade-mc-server" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = inputs;
+        specialArgs = {inherit inputs;};
         modules = [
           ./system
           ./minecraft
-          ./home
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.leviticusc = import ./minecraft/home.nix;
-          }
         ];
       };
     };
