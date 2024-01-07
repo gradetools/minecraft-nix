@@ -9,7 +9,7 @@
     extraGroups = ["networkmanager" "wheel" "audio" "video" "input"];
     packages = with pkgs; [];
     shell = pkgs.zsh;
-    initialPassword = "glazemaster";
+    initialHashedPassword = "173b4y23b4y123b4u123by412bu34b1y2u3b1y2u3b4u1i3b4";
     # openssh.authorizedKeys.keyFiles = [
     #   /etc/nixos/ssh/authorized_keys
     # ];
