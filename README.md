@@ -1,2 +1,2 @@
-# grade-server-nix
-nix (ew) flake setup for the grade minecraft server
+## grade-server-nix
+built in the worst language for the worst operating system
