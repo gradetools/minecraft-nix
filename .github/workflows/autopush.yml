@@ -1,6 +1,7 @@
 name: autopush
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 2 * * *'  # This cron expression triggers the workflow every day at 2 AM UTC
 
