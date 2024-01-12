@@ -7,12 +7,15 @@ on:
 
 jobs:
   create-pr:
+    runs-on: ubuntu-latest
     steps:
-      - name: create pull request
-        run: gh pr create -B production/stable -H testing/rolling --title 'Regularly scheduled push to production' --body 'This is a test'
-        with: 
-          pr-labels: |
-            automated
-            autopush
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Create Pull Request
+        run: |
+          base_branch="production/stable"
+          branch_to_merge="testing/rolling"
+          gh pr create -B $base_branch -H $branch_to_merge --title "Regularly scheduled push to production" --body "This PR is merging the testing/rolling branch to production/stable. Feel free to close this PR if it's not ready for release."
+          pr_number=$(gh pr list --base $base_branch --state open --json number --limit 1 | jq -r .[0].number)
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
