@@ -3,7 +3,9 @@ on:
   workflow_dispatch: # allows manual triggering
   schedule:
     - cron: '0 6 * * *' # runs daily on 06:00 UTC
-
+  push:
+    branches:
+      - testing/rolling
 jobs:
   lockfile:
     runs-on: ubuntu-latest
