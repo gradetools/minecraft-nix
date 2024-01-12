@@ -1,2 +1,2 @@
 ## grade-server-nix
-built in the worst language for the worst operating system
+simple nix configuration for minecraft
