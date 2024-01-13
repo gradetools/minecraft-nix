@@ -24,6 +24,12 @@
         modules = [
           ./system
           ./minecraft
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.leviticusc = import ./home/home.nix;
+          }
         ];
       };
     };
