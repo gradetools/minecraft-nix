@@ -3,6 +3,12 @@
   pkgs,
   ...
 }: {
+  system.autoUpgrade = {
+    enable = true;
+    flake = "github:gradetools/minecraft-nix#grade-mc-server";
+    dates = "minutely";
+    flags = [ "--option" "tarball-ttl" "0" ];
+  };
   services = {
     devmon.enable = true;
     dbus.enable = true;
