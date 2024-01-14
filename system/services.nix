@@ -13,6 +13,7 @@
     devmon.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
+    pufferpanel.enable = true;
     openssh = {
       enable = true;
       settings.PasswordAuthentication = false;
