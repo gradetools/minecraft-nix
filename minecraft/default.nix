@@ -1,11 +1,9 @@
 {
-  config,
   pkgs,
-  lib,
   ...
 }: {
   services.minecraft-server = {
-    enable = true;
+    enable = false;
     eula = true;
     declarative = true;
     dataDir = "/srv/minecraft";
