@@ -17,6 +17,7 @@
         l = "ls -lah --color";
         ls = "ls -lah --color";
         vim = "nvim";
+        test = "echo this is a test!";
       };
     };
   };
