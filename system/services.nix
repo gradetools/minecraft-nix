@@ -14,15 +14,6 @@
     devmon.enable = true;
     dbus.enable = true;
     tailscale.enable = true;
-    pufferpanel = {
-      enable = true;
-      extraPackages = with pkgs; [ bash curl gawk gnutar gzip ];
-      package = pkgs.buildFHSEnv {
-        name = "pufferpanel";
-        runScript = lib.getExe pkgs.pufferpanel;
-        targetPkgs = pkgs': with pkgs'; [ icu openssl zlib ];
-      };
-    };
     openssh = {
       enable = true;
       settings.PasswordAuthentication = false;
