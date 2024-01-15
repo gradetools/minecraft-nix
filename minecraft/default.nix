@@ -3,7 +3,7 @@
   ...
 }: {
   services.minecraft-server = {
-    enable = false;
+    enable = true;
     eula = true;
     declarative = true;
     dataDir = "/srv/minecraft";
