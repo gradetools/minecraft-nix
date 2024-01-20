@@ -20,7 +20,8 @@
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJOSVpxJmOUfiDnX+EOZ5iInGQSJT4iZwSIrGCQMkS1M 140866184+xMqme@users.noreply.github.com"
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC05s+wxlFUMx9hjB9LeZLNhvzuC1khMNJgBQ2F5HY/w lily@blueberry"
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFTdbL7pBiLttK2NUK2cfOOg7JJCBw6LsLNRuV7hnFJ9 nixer@nixos"
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG6PQYEEsVkkwFWqZa49KqYcAFLbVyuR5WmpPNLkIJSe 109875196+caernarferon@users.noreply.github.com"      
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG6PQYEEsVkkwFWqZa49KqYcAFLbVyuR5WmpPNLkIJSe 109875196+caernarferon@users.noreply.github.com"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEDlQL1/GlsK2kmUY8/UZu5C+quiQsu68yaYbt3eLk9j nixer@elliotpc"
     ];
   };
   users = {
