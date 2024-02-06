@@ -4,8 +4,8 @@ on:
   schedule:
     - cron: '0 6 * * *' # runs daily on 06:00 UTC
   push:
-    branches:
-      - testing/rolling
+    branches-ignore:
+      - production/stable
 jobs:
   lockfile:
     runs-on: ubuntu-latest
