@@ -17,6 +17,7 @@
     home-manager,
     ...
   } @ inputs: {
+    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
     nixosConfigurations = {
       "grade-mc-server" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
