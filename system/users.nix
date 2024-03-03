@@ -1,12 +1,13 @@
-{ config
-, pkgs
-, ...
+{
+  config,
+  pkgs,
+  ...
 }: {
   users.users.leviticusc = {
     isNormalUser = true;
     description = "sysadmin";
-    extraGroups = [ "networkmanager" "wheel" "audio" "video" "input" ];
-    packages = with pkgs; [ ];
+    extraGroups = ["networkmanager" "wheel" "audio" "video" "input"];
+    packages = with pkgs; [];
     shell = pkgs.zsh;
     initialHashedPassword = "173b4y23b4y123b4u123by412bu34b1y2u3b1y2u3b4u1i3b4";
     # openssh.authorizedKeys.keyFiles = [
